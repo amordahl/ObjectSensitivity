@@ -1,3 +1,0 @@
-interface Allocator {
-    A getA();
-}

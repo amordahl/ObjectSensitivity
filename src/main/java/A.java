@@ -1,12 +1,13 @@
 import java.util.function.Consumer;
 
-class A<T> {
-    private Consumer<T> consumer;
+public class A<T> {
+    private final Consumer<T> consumer;
 
-    A(Consumer<T> consumer) {
+    public A(Consumer<T> consumer) {
         this.consumer = consumer;
     }
-    void foo(T s) {
-        this.consumer.accept(s);
+
+    public void foo(T a) {
+        this.consumer.accept(a);
     }
 }
